@@ -1,0 +1,23 @@
+:root {
+    --maincolor:#15202B;
+    --secondarycolor:#192734;
+
+    --mainText:#fff;
+    --secondaryText:#eee; 
+
+    --bordercolor:#164D56;
+
+    
+    --mainShadow: 20px 20px 60px #164D56, 
+             -20px -20px 60px #15202B;
+
+    --animationColor:rgba(77, 77, 77, 0.719);
+
+    --theme-border:#FFF;
+
+    --previewBg:rgb(25, 39, 52, 0.8);
+
+    --preview-shadow:#111921;
+    --battonColor:#17a2b8;
+}
+
