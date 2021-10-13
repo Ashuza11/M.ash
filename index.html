@@ -11,7 +11,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
-    <link id="theme-style" rel="stylesheet" type="text/css" href="blue.css">
+    <link id="theme-style" rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <section class="style1">
@@ -33,14 +33,14 @@
                 </div>
 
                 <div class="left-colomn">
-                    <img id="profil-pic" src="images/ma.jpg" alt="profil picture">
+                    <img id="profil-pic" src="images/profile.jpg" alt="profil picture">
                     <h5 style="text-align:center;line-height:0;">Personalize Themes</h5>
 
                     <div class="theme-option-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
-                        <div id="blue-mode" class="theme-dot"></div>
-                        <div id="green-mode" class="theme-dot"></div>
-                        <div id="purple-mode" class="theme-dot"></div>
+                        <div  data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                     </div>
 
                     <p id="stings-note">Theme sttings will be saved for<br>your next visit.</p>
@@ -96,10 +96,11 @@
                 </div>
 
                 <div class="social-links">
-                    <img  id="social_img" src="images/profile.jpg" alt="social media image">
-                    <h3>Find me on Twitter & Linkdin</h3>
+                    <img  id="social_img" src="images/github.png" alt="social media image">
+                    <h3>Find me on Twitter & Linkdin & Github</h3>
                     <a href="#" target="_blink">Twitter: @Ash</a>
                     <a href="#" target="_blink">Linkdin: @Ash14</a>
+                    <a href="#" target="_blink">Github: @Ashuza11</a>
                 </div>
             </div>
         </div>
@@ -163,6 +164,8 @@
             </form>
         </div>
     </section>
+
+    <script type="text/javascript" src="theme.js"></script>
     
 </body>
-</html>
+</html> 

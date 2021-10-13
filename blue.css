@@ -7,7 +7,8 @@
 
     --bordercolor:#164D56;
 
-    
+    --animationColor:#fff;
+
     --mainShadow: 20px 20px 60px #164D56, 
              -20px -20px 60px #15202B;
 
@@ -19,5 +20,7 @@
 
     --preview-shadow:#111921;
     --battonColor:#17a2b8;
+
+    --introColor:#fff;
 }
 
