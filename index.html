@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>M_Ash</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon"/>
 
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles.css">
-    <link id="theme-style" rel="stylesheet" type="text/css" href="styles.css">
+    <title>M.ash</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link id="theme-style" rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
 <body>
-    <section class="style1">
+    <section class="style1" id="home-section">
         <div class="container">
             <div class="greeting-wrapper">
-                <h1>Hi, I ame  M. Ashuza<span></span> </h1>
+                <h1>Hi, I'm MUHIGIRI Ashuza<span></span> </h1>
             </div>
             
             <div class="intro-wrapper">
@@ -28,7 +29,10 @@
                         <div id="dot-3" class="brawser-dots"></div>
                     </div>
                     <ul id="navigation">
-                        <li><a href="#"></a>Contact</li>
+                        <li><a href="#home-section">Home</a></li>
+                        <li><a href="#about-section">About</a></li>
+                        <li><a href="#project-section">Project</a></li>
+                        <li><a href="#contact-section">Contact</a></li>
                     </ul>
                 </div>
 
@@ -42,8 +46,6 @@
                         <div data-mode="green" id="green-mode" class="theme-dot"></div>
                         <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                     </div>
-
-                    <p id="stings-note">Theme sttings will be saved for<br>your next visit.</p>
                 </div>
 
                 <div class="right-column">
@@ -53,7 +55,7 @@
                             <div id="conner-tr" class="conner"></div>
     
                             <h3>What I do</h3>
-                            <p>I was just a student in the faculty os Science and technology, now I enjoy Learning new technologies, programming languagies and solve problemes by Building real projects.</p>
+                            <p>As a student, at first glance it was complicated but now I enjoy Learning new technologies, programming languagies and solve problemes by Building real projects.</p>
     
                             <div id="conner-br" class="conner"></div>
                             <div id="conner-bl" class="conner"></div>
@@ -64,26 +66,33 @@
         </div>
     </section>
 
-    <section class="style2">
+    <section class="style2" id="about-section">
         <div class="container">
             <div class="about-wrapper">
                 <div class="about-me">
                     <h4>More About Me</h4>
 
-                    <p>I am a web developer in training. I have skills in Java| PHP | C | python | SQL | JavaScript | HTML | CSS | Bootstrap. I am open to learning and enhance my experience for achieving my dreams of becoming a full-Stuck web developer</p>
+                    <p>
+                        I am cuently a senior student in electrical engineering and computer science at ULPGL-GOMA University.
+                        I have a knack for web development and DevOps.
+                        
+                        My techstuck include in C | PHP | Python | SQL | JavaScript & javascript-base framework | HTML & CSS | Bootstrap & Figma.
+                        I am open to learning and enhance my experience for achieving my dreams of becoming a full-Stuck developer.
+                    </p>
 
-                    <p>I build new projets just to tickle my brain and put in practice all the knowlodge i get form my learning, while solving problems in my community.</p>
-
+                    <p>
+                        I build new projets just to tickle my brain and put in practice all the knowlodge i get form my learning, while solving problems in my community.</p>
                     <hr>
                     <h4>Top Expertise</h4>
 
-                    <p>Computer Science and elctrical engineering, English Language Tutor and aspiring web developer: <a href="Ash_cv.pdf" target="_blink">Download Resume</a></p>
+                    <p>Computer Science and elctrical engineering, English Language Tutor and aspiring fulstack developer: <a href="Ash_cv.pdf" target="_blink">Download Resume</a></p>
                     <div id="skills">
                         <ul>
                             <li>Python</li>
                             <li>Django</li>
                             <li>JavaScript</li>
-                            <li>C/Java</li>
+                            <li>C/PhP</li>
+                            <li>Flask</li>
                         </ul>
 
                         <ul>
@@ -91,81 +100,99 @@
                             <li>Linux</li>
                             <li>Heroku</li>
                             <li>Html/css</li>
+                            <li>Figma</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="social-links">
-                    <img  id="social_img" src="images/github.png" alt="social media image">
+                    <img  id="social_img" src="./images/ulistration.jpg" alt="social media image">
                     <h3>Find me on Twitter & Linkdin & Github</h3>
-                    <a href="#" target="_blink">Twitter: @Ash</a>
-                    <a href="#" target="_blink">Linkdin: @Ash14</a>
-                    <a href="#" target="_blink">Github: @Ashuza11</a>
+                    <a href="https://twitter.com/m_Ashuza1" target="_blink">Twitter: @Ash</a>
+                    <a href="https://www.linkedin.com/in/m-ashuza-7a21611b4/" target="_blink">Linkdin: @Ash14</a>
+                    <a href="https://github.com/Ashuza11" target="_blink">Github: @Ashuza11</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="style1">
+    <section class="style1" id="project-section">
         <div class="container">
             <h3 style="text-align: center;">Some of my Past projects</h3>
             <div class="post-wrapper">
-                <div class="post-wrapper">
-                    <div class="post-container">
-                        <img class="thunbmail" src="images/eight.png" alt="lorenz atractor project">
-                        <div class="post-preview">
-                            <h5 class="post-title">Post Title</h5>
-                            <p class="post-intro">This is the first project i made in python programming laguange</p>
-                            <a href="post.html" target="_blink">Read More</a>
+                <div>
+                    <div class="post-wrapper">
+                        <div class="post-container">
+                            <img class="thunbmail zoom" src="./images/sgp1.png" alt="lorenz atractor project">
+                            <div class="post-preview">
+                                <h5 class="post-title">SGP Web app</h5>
+                                <p class="post-intro">A management system for recording expenses and payment slips.</p>
+                                <a href="https://github.com/Ashuza11/SGP_FSTA_Webapp" target="_blink">Read More</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="post-wrapper">
-                    <div class="post-container">
-                        <img class="thunbmail" src="images/Finance.png" alt="lorenz atractor project">
-                        <div class="post-preview">
-                            <h5 class="post-title">Post Title</h5>
-                            <p class="post-intro">This is the first project i made in python programming laguange</p>
-                            <a href="post.html" target="_blink">Read More</a>
+                <div>
+                    <div class="post-wrapper">
+                        <div class="post-container zoom">
+                            <img class="thunbmail" src="./images/apetito.png" alt="lorenz atractor project">
+                            <div class="post-preview">
+                                <h5 class="post-title">Apetito Restorant</h5>
+                                <p class="post-intro">A food ordering web app for the university restaurant.</p>
+                                <a href="https://github.com/Ashuza11/apetito_resto" target="_blink">Read More</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="post-wrapper">
-                    <div class="post-container"> 
-                        <img class="thunbmail" src="images/project.png" alt="lorenz atractor project">
-                        <div class="post-preview">
-                            <h5 class="post-title">Post Title</h5>
-                            <p class="post-intro">This is the first project i made in python programming laguange</p>
-                              <a href="post.html" target="_blink">Read More</a>
+                <div>
+                    <div class="post-wrapper">
+                        <div class="post-container"> 
+                            <img class="thunbmail zoom" src="./images/Home.png" alt="lorenz atractor project">
+                            <div class="post-preview">
+                                <h5 class="post-title">cimé Access</h5>
+                                <p class="post-intro">A people tracking system for rooms access at the university.</p>
+                                <a href="https://github.com/Ashuza11/CA_cim-_access" target="_blink">Read More</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <section class="style2">
+    <section class="style2" id="contact-section">
         <div class="container">
             <h3 style="text-align: center;">Get In Touch</h3>
-            
-            <form id="contact-form" action="#">
-                <label for="Name">Name</label>
-                <input class="input-field" type="text" name="name">
-                <label for="subject">Subject</label>
-                <input class="input-field" type="text" name="subject">
-                <label for="email">Email</label>
-                <input class="input-field" type="text" name="email">
-                <label for="massage">Massage</label>
-                <textarea class="input-field" name="massage"></textarea>
-
-                <input id="submit-btn" type="submit" value="send">
-            </form>
+            <div class="row">
+                <div class="box">
+                    <a href="mailto:ashuzamh@gmail.com" target="_blank">
+                        <img src="./images/icon/message.png" alt="icon">
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="https://github.com/Ashuza11" target="_blank">
+                        <img src="./images/icon/github.png" alt="icon">
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="https://twitter.com/m_Ashuza1" target="_blank">
+                        <img src="./images/icon/tweeter.png" alt="icon">
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="https://www.linkedin.com/in/m-ashuza-7a21611b4/" target="_blank">
+                        <img src="./images/icon/linkdn.png" alt="icon">
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
-
-    <script type="text/javascript" src="theme.js"></script>
-    
+    <section class="style1">
+        <div class="footer-copyright">© 2022 M.ash</div>
+    </section>
+    <script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html> 

@@ -11,7 +11,6 @@
 
     --mainShadow: 20px 20px 60px #c7c7c7, 
              -20px -20px 60px #ffffff;
-
              
     --animationColor:rgba(77, 77, 77, 0.719);
 
@@ -20,9 +19,11 @@
     --previewBg:rgb(251, 249, 243, 0.8);
 
     --preview-shadow:#f0ead6;
-    --battonColor:black;
+
+    --buttonColor:black;
 
     --introColor:black;
+    --box-color: rgba(0, 0, 0, 0.575);
 }
 
 /* General styles  */
@@ -33,7 +34,7 @@ html body {
 }
 
 body * {
-    transition: 0.3s;
+    transition: .9s;
 }
 
 
@@ -54,7 +55,8 @@ a {
     color: #17a2b8;
 }
 
-h1 {font-size: 60px;}
+
+h1 {font-size: 40px;}
 h2 {font-size: 36px;}
 h3 {font-size: 28px;}
 h4 {font-size: 24px;}
@@ -98,11 +100,11 @@ h6 {font-size: 16px;}
     /* width: fit-content; */
     position: relative;
     color: transparent;
-    animation: text_reveal .5s ease forwards;
+    animation: text_reveal .6s ease forwards;
     animation-delay: 1s;
 }
 .style1 .greeting-wrapper h1:nth-child(1) {
-    animation-delay: text_reveal_name .5s ease forwards;
+    animation-delay: text_reveal_name .6s ease forwards;
     animation-delay: 1s;
 }
 
@@ -113,15 +115,15 @@ h6 {font-size: 16px;}
     left: 0;
     height: 100%;
     width: 0;
-    background-color: var(--animationColor);
-    animation: text_reveal_box 1s ease;
-    animation-delay: .5s;
-    opacity: .6;
+    background-color: var(--maincolor);
+    animation: text_reveal_box 6s ease;
+    animation-delay: 1s;
+    opacity: .9;
 }
 
 .style1 .greeting-wrapper h1:nth-child(1) span {
-    animation-delay: .5s;
-    opacity: .6;
+    animation-delay: .1s;
+    opacity: .9;
 }
 
 
@@ -364,6 +366,7 @@ h6 {font-size: 16px;}
 #social_img {
     width: 100%;
     height: 400px;
+    margin-top: 50px;
 }
 /* End section number 2 style2 */
 
@@ -379,6 +382,7 @@ h6 {font-size: 16px;}
 
 .post-container{
     border:1px solid var(--bordercolor);
+    box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
 }
 
 .thunbmail {
@@ -387,6 +391,17 @@ h6 {font-size: 16px;}
     height: 200px;
     object-fit: cover;
 } 
+/* .container .post-container {
+    height: 100px;
+    overflow: hidden;
+    cursor: pointer;
+} */
+.container .post-container img {
+    transition: transform .5s ease;
+}
+.container .post-container img:hover {
+    transform: scale(1.5);
+}
 .post-preview {
     background-color: #fff;
     padding: 15px;
@@ -404,43 +419,56 @@ h6 {font-size: 16px;}
 /* End section number 1 style1 */
 
 /* Start section number 2 style2 */
-#contact-form {
+.style2 .container .row{
     display: block;
-    max-width: 600px;
+    max-width: 100%;
+    height: auto;
     margin: 0 auto;
     border: 1px solid var(--bordercolor);
-    padding: 15px;
-    border-radius: 5px;
+    padding: 40px;
+    border-radius: 8px;
     background-color: var(--maincolor);
     margin-bottom: 50px;
     box-shadow: var(--mainShadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
 }
-#contact-form label {
-    line-height: 2.7rem;
+.style2 .container .row .box{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.style2 .container .row .box img{
+    width: 70px;
+    height: auto;
 }
 
-#contact-form textarea {
-    line-height: 100px;
-    font-size: 14px;
-}
-.input-field {
+
+
+
+.style1 .footer-copyright{
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: var(--secondarycolor);
-    border:1px solid var(--bordercolor);
-    font-size: 14px;
-    border-radius: 5px;
-}
-/* btn-style */
-#submit-btn {
-    margin-top: 10px;
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    height: 40px;
+    background-color: #000;
     color: #fff;
-    background-color: var(--buttonColor);
-    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    padding: 5px;
+    font-size: 16px;
+    overflow-y: hidden;
+}
+.style1 {
+    overflow: hidden;
+    border-bottom: none;
 }
 
 /* End section number 2 style2 */
@@ -467,4 +495,19 @@ h6 {font-size: 16px;}
     .right-column {
         justify-content: center;
     }
+}
+
+@media screen and (max-width: 400px){
+	#preview-shadow {
+		max-width: 280px;
+		height: 180px;
+		padding-left: 10px;
+		padding-top: 10px;
+	}
+
+	#preview {
+		width: 280px;
+
+	}
+
 }
