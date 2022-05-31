@@ -514,7 +514,7 @@ h6 {font-size: 16px;}
 	}
     .container .post-wrapper{
         display: grid;
-        grid-template-columns: repeat(auto-fit, 335px);
+        grid-template-columns: repeat(auto-fit, 340px);
     }
     #social_img{
         margin-top: 0px;
