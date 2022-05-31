@@ -34,7 +34,7 @@ html body {
 }
 
 body * {
-    transition: .9s;
+    transition: 0.3s;
 }
 
 
@@ -56,7 +56,7 @@ a {
 }
 
 
-h1 {font-size: 40px;}
+h1 {font-size: 56px;}
 h2 {font-size: 36px;}
 h3 {font-size: 28px;}
 h4 {font-size: 24px;}
@@ -295,7 +295,7 @@ h6 {font-size: 16px;}
  #preview-shadow {
      background-color: var(--preview-shadow);
      width: 300px;
-     height: 250px;
+     height: 180px;
      padding-left: 30px;
      padding-top: 30px;
  }
@@ -509,5 +509,24 @@ h6 {font-size: 16px;}
 		width: 280px;
 
 	}
+    #social_img{
+        margin-top: 0px;
+    }
 
+}
+
+@media screen and (max-width: 484px){
+    .nav-wrapper {
+        background-color: #333;
+    }
+	.nav-wrapper #navigation{
+        display: none;
+    }
+    .nav-wrapper #navigation  a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
 }
