@@ -391,11 +391,7 @@ h6 {font-size: 16px;}
     height: 200px;
     object-fit: cover;
 } 
-/* .container .post-container {
-    height: 100px;
-    overflow: hidden;
-    cursor: pointer;
-} */
+
 .container .post-container img {
     transition: transform .5s ease;
 }
