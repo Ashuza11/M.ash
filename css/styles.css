@@ -493,7 +493,7 @@ h6 {font-size: 16px;}
     }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
 	#preview-shadow {
 		max-width: 280px;
 		height: 180px;
@@ -506,6 +506,10 @@ h6 {font-size: 16px;}
         padding: .6rem;
         padding-top: 10px;
         padding-bottom: 10px;
+
+	}
+    #preview p {
+		padding-right: 10px;
 
 	}
     .container .post-wrapper{
