@@ -8,10 +8,10 @@
 * HTML / CSS : For the marckup and style
 * Javascript : For the animations
 
-## Project Screen Short
+## Project building process
 ![Project schow](images/full.gif)
 
-## Referncies 
+## Credits 
 If you wanna build it on your own, [you can follow this Youtube video](#).
 
 
