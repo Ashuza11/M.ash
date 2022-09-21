@@ -24,6 +24,7 @@
 
     --introColor:black;
     --box-color: rgba(0, 0, 0, 0.575);
+    --text-typing: #17a2b8;
 }
 
 /* General styles  */
@@ -88,73 +89,28 @@ h6 {font-size: 16px;}
 } 
 
 /* Using css grid to style the content */
-.greeting-wrapper {
+.text-typing {
     display: grid;
     text-align: center;
     align-content: center;
-    min-height: 10em;
+    min-height: 6em;
 }
 
-/* css Animation */
-.style1 .greeting-wrapper h1 {
+.style1 .text-typing h2 {
     /* width: fit-content; */
-    position: relative;
-    color: transparent;
-    animation: text_reveal .6s ease forwards;
-    animation-delay: 1s;
-}
-.style1 .greeting-wrapper h1:nth-child(1) {
-    animation-delay: text_reveal_name .6s ease forwards;
-    animation-delay: 1s;
+    font-size: 2rem;
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
 
-
-.style1 .greeting-wrapper h1 span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 0;
-    background-color: var(--maincolor);
-    animation: text_reveal_box 6s ease;
-    animation-delay: 1s;
-    opacity: .9;
+.style1 .text-typing h1 {
+    font-size: 2.5rem;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
-
-.style1 .greeting-wrapper h1:nth-child(1) span {
-    animation-delay: .1s;
-    opacity: .9;
+.style1 .text-typing .typing-text {
+    color: var(--text-typing);
 }
-
-
-@keyframes text_reveal_box {
-  50% {
-    width: 100%;
-    left: 0; }
-  100% {
-    width: 0;
-    left: 100%; } 
-}
-@keyframes text_reveal {
-    100% {
-        
-        color: rgb(0, 0, 0); 
-        color: var(--introColor);
-    } 
-
-}
-@keyframes text_reveal_name {
-  100% {
-    color: var(--animationColor);
-    font-weight: 500px; } 
-}
-
-/* End css Animation */
-
-
-/* Section number 1 style1 */
-
-/* Start of the Intro wrapper */
 
 .intro-wrapper {
     background-color: var(--secondarycolor);

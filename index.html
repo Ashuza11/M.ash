@@ -18,8 +18,9 @@
 <body>
     <section class="style1" id="home-section">
         <div class="container">
-            <div class="greeting-wrapper">
-                <h1>Hi, I'm MUHIGIRI Ashuza<span></span> </h1>
+            <div class="text-typing">
+                <h2>Hello...</h2>
+                <h1>I am <span class="typing-text"></span></h1>
             </div>
             
             <div class="intro-wrapper">
@@ -185,6 +186,14 @@
     <section class="style1">
         <div class="footer-copyright">© 2022 M.ash</div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script type="text/javascript" src="./js/script.js"></script>
+    <script>
+        var typed = new Typed('.typing-text', {
+        strings: ['MUHIGIRI Ashuza', 'Graphic designer', 'Software Engineer', 'Python dev'],
+        typeSpeed:140,
+        loop:true
+        });
+    </script>
 </body>
 </html> 
