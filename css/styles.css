@@ -93,20 +93,20 @@ h6 {font-size: 16px;}
     display: grid;
     text-align: center;
     align-content: center;
-    min-height: 6em;
+    min-height: 8em;
 }
 
 .style1 .text-typing h2 {
     /* width: fit-content; */
     font-size: 2rem;
-    margin-top: 15px;
+    margin-top: 20px;
     margin-bottom: 5px;
 }
 
 .style1 .text-typing h1 {
     font-size: 2.5rem;
     margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 .style1 .text-typing .typing-text {
     color: var(--text-typing);
