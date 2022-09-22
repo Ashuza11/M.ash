@@ -41,7 +41,7 @@ body * {
 
 h1, h2, h3, h4, h5, h6, strong {
     color: var(--mainText);
-    font-family: 'Russo One', cursive, sans-serif;
+    font-family: cursive, sans-serif;
     font-weight: 500;
 }
 
@@ -110,6 +110,7 @@ h6 {font-size: 16px;}
 }
 .style1 .text-typing .typing-text {
     color: var(--text-typing);
+    font-family: cursive, sans-serif;
 }
 
 .intro-wrapper {
