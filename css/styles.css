@@ -28,7 +28,6 @@
 }
 
 /* General styles  */
-
 html body {
     padding: 0;
     margin: 0;
@@ -53,7 +52,7 @@ p, li, span, label, input, textarea {
 }
 a {
     text-decoration: none;
-    color: #17a2b8;
+    color: var(--text-typing);
 }
 
 
@@ -64,7 +63,11 @@ h4 {font-size: 24px;}
 h5 {font-size: 20px;}
 h6 {font-size: 16px;}
 
-
+.btn {
+    display: inline-block;
+    padding: .5rem 1rem;
+    border-radius: 2px;
+}
 
 /* section styles  */
 
@@ -375,58 +378,51 @@ h6 {font-size: 16px;}
 }
 /* End section number 1 style1 */
 
-/* Start section number 2 style2 */
-.style2 .container .row{
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-    border: 1px solid var(--bordercolor);
-    padding: 40px;
-    border-radius: 8px;
-    background-color: var(--maincolor);
-    margin-bottom: 50px;
-    box-shadow: var(--mainShadow);
+/* Start Contact section  */
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 40vh;
+}
+.contact .contact-links {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 100px;
-}
-.style2 .container .row .box{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.style2 .container .row .box img{
-    width: 70px;
-    height: auto;
-}
-
-
-
-
-.style1 .footer-copyright{
     width: 100%;
-    height: 40px;
+    max-width: 980px;
+}
+.contact-links .contact-details:hover {
+    transform: translateY(8px);
+}
+.contact .contact-details {
+    font-size: 2rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform .3s ease-out;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
     background-color: #000;
-    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     bottom: 0;
-    padding: 5px;
-    font-size: 16px;
-    overflow-y: hidden;
 }
-.style1 {
+footer > p {
+    color: #fff;
+    padding: .7em;
+    font-size: 1em;
+}
+/* .style1 {
     overflow: hidden;
     border-bottom: none;
-}
+} */
 
 /* End section number 2 style2 */
 
@@ -502,5 +498,11 @@ h6 {font-size: 16px;}
         text-decoration: none;
         font-size: 17px;
         display: block;
+    }
+    .contact .contact-links {
+        flex-direction: column;
+    }
+    .contact .contact-details {
+        font-size: 1.5rem;
     }
 }
